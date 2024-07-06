@@ -115,7 +115,7 @@ return [
 		*/
 		'favorites' => '5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'first7' => '2, 3, 4, 5, 6, 9, 11',
+		'first7' => '1, 3, 4, 5, 6, 9, 11',
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
