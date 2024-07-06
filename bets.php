@@ -101,7 +101,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $toWin = [];
     $first7 = array_values(array_unique(array_merge($first7, $favorites)));
     sort($first7);
-    $racetext .= "\t\t'first7' => '" . implode(", ", $first7) . "',\n";
     foreach($first7 as $F){
         $intersections[$F] = array_intersect($history[$raceNumber][$F]["win"], $runners);
         foreach($first7 as $horse){
