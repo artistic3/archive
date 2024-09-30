@@ -1,10 +1,9 @@
-raceDate="0928";
-php getodds.php $raceDate ST 10;
-php getwinodds.php $raceDate ST 10;
+raceDate="1001";
+php getodds.php $raceDate ST 11;
+php getwinodds.php $raceDate ST 11;
 php bets.php $raceDate;
 for i in `seq 1 2564`; 
 do 
     php bets.php $raceDate $i;
 done
 php agregate.php $raceDate;
-
