@@ -3,7 +3,7 @@
 
 require 'functions.php';
 
-$currentYear = "2024";
+$currentYear = "2025";
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 else {
@@ -20,7 +20,7 @@ $raceDateFormat = $currentYear . "-" . $tmp;
 if(!isset($argv[2])) $venue = "ST";
 else $venue = trim($argv[2]);
 
-$outDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
+$outDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate . $venue;
 
 if (!file_exists($outDir)) {
     mkdir($outDir, 0777, true);
