@@ -5,7 +5,12 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '(F) 1, 3',
+		'favorites' => '(F) 1, 3, 4',
+		'place(end-favorites )' => '4',
+		'super sure bet' => 'super sure place 4',
+		'places($10)' => '4',
+		'sures($10)' => '4',
+		'super sures($10)' => '4',
 	],
 	'2' => [
 		/**
@@ -37,7 +42,10 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '(F) 5, 10',
+		'favorites' => '(F) 3, 5, 10',
+		'win(union 2566)' => '3, 5, 6, 10',
+		'unions($10)' => '3, 5, 6, 10',
+		'union + favorites' => '3, 5, 6, 10',
 	],
 	'7' => [
 		/**
