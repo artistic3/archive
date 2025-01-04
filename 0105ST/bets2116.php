@@ -66,20 +66,21 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '7',
+		'favorites' => '1, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
-			'inter' => '',
+			'win' => '1, 2, 5',
+			'qin' => '1, 2, 4, 5, 10, 11',
+			'trio' => '1, 2, 4, 5, 7, 10, 11',//count trio: 7
+			'inter' => '1',
 		],
-		'win inter' => '1, 2, 3, 5, 11, 12',
+		'win inter' => '1, 2, 3, 5, 11',
+		'win inter 2' => '1, 2, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '7',//count wp: 1
+		'wp' => '1, 7',//count wp: 2
 	],
 	'5' => [
 		/**
