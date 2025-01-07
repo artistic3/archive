@@ -35,7 +35,10 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '(F) 8',
+		'favorites' => '(F) 5, 8',
+		'win(union 1)' => '1, 4, 5, 8',
+		'unions($10)' => '1, 4, 5, 8',
+		'union + favorites' => '1, 4, 5, 8',
 	],
 	'6' => [
 		/**
