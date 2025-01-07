@@ -51,9 +51,7 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '(F) 1, 3, 6',
-		'place(end-favorites )' => '6',
-		'super sure bet' => 'super sure place 6',
+		'favorites' => '(F) 1, 3, 6, 10',
 		'places($10)' => '6',
 		'sures($10)' => '6',
 		'super sures($10)' => '6',
