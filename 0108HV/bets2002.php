@@ -67,22 +67,20 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '1, 12',
+		'favorites' => '1, 7, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '1, 2, 6',
-			'qin' => '1, 2, 3, 5, 6',
-			'trio' => '1, 2, 3, 5, 6, 7',//count trio: 6
+			'win' => '1, 2, 5, 6, 11',
+			'qin' => '1, 2, 3, 4, 5, 6, 9, 10, 11',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11',//count trio: 10
 			'inter' => '1',
 		],
 		'win inter' => '6, 11',
-		'win inter 2' => '1, 2, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
-			'win(union 2002)' => '1, 6, 11, 12',
 		],
-		'total bets' => 400,
-		'wp' => '1, 12',//count wp: 2
+		'total bets' => 0,
+		'wp' => '1, 7, 12',//count wp: 3
 	],
 	'5' => [
 		/**
@@ -128,7 +126,7 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '1, 3, 6, 10',
+		'favorites' => '1, 3, 6, 10, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
 			'win' => '1, 2, 3, 5, 6, 8, 10, 12',
@@ -136,7 +134,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '1, 3, 6, 10',
 		],
-		'win inter' => '2, 3, 5, 10',
+		'win inter' => '10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
@@ -169,25 +167,26 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '10',
+		'favorites' => '9, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
-			'inter' => '',
+			'win' => '4, 10',
+			'qin' => '4, 5, 8, 9, 10',
+			'trio' => '4, 5, 6, 8, 9, 10, 11',//count trio: 7
+			'inter' => '10',
 		],
-		'win inter' => '2, 3, 4, 5, 10, 12',
+		'win inter' => '2, 3, 4, 12',
+		'win inter 2' => '4, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '10',//count wp: 1
+		'wp' => '9, 10',//count wp: 2
 	],
 ];
 //total place end favorites: 0
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0
-//total win: -1200
+//total win: -800
 //total: 0
