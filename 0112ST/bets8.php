@@ -5,21 +5,20 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '1, 10, 11',
+		'favorites' => '1, 7, 10, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '1, 2, 3, 4, 5, 8, 9, 10, 11, 12',
-			'qin' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',
+			'win' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
-			'inter' => '1, 10, 11',
+			'inter' => '1, 7, 10, 11',
 		],
 		'win inter' => '8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
-			'win(union 8)' => '1, 8, 10, 11',
 		],
-		'total bets' => 400,
-		'wp' => '1, 10',//count wp: 2
+		'total bets' => 0,
+		'wp' => '1, 7, 10',//count wp: 3
 	],
 	'2' => [
 		/**
@@ -88,20 +87,21 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '12',
+		'favorites' => '5, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'suggestions' => [
-			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
-			'inter' => '',
+			'win' => '5, 6',
+			'qin' => '2, 5, 6, 11',
+			'trio' => '1, 2, 5, 6, 11, 13',//count trio: 6
+			'inter' => '5',
 		],
 		'win inter' => '2, 3, 4, 5',
+		'win inter 2' => '5, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '',//count wp: 0
+		'wp' => '5',//count wp: 1
 	],
 	'6' => [
 		/**
@@ -210,5 +210,5 @@ return [
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0
-//total win: -400
+//total win: 0
 //total: 0
