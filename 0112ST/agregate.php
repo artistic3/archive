@@ -32,9 +32,9 @@ return [
 		Race 5
 		*/
 		'favorites' => '(F) 5, 12',
-		'win(union 626)' => '2, 4, 5, 12',
 		'unions($10)' => '2, 3, 4, 5, 12',
 		'union + favorites' => '2, 3, 4, 5, 12',
+		'win(union 626)' => '2, 4, 5, 12',
 		'win(union 1338)' => '3, 4, 5, 12',
 	],
 	'6' => [
@@ -61,7 +61,7 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '(F) 1',
+		'favorites' => '(F) 1, 5',
 	],
 	'10' => [
 		/**
