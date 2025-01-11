@@ -6,7 +6,6 @@ return [
 		Race 1
 		*/
 		'favorites' => '(F) 1, 10, 11',
-		'win(union 1)' => '1, 8, 10, 11',
 		'unions($10)' => '1, 8, 10, 11',
 		'union + favorites' => '1, 8, 10, 11',
 	],
