@@ -48,14 +48,12 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '(F) 1, 3, 9, 11',
-		'place(end-favorites )' => '11',
+		'favorites' => '(F) 1, 3, 8, 9, 11',
 		'places($10)' => '9, 11',
 		'sures($10)' => '11',
 		'unions($10)' => '3, 5, 7, 11, 12',
-		'union + favorites' => '1, 3, 5, 7, 9, 11, 12',
+		'union + favorites' => '1, 3, 5, 7, 8, 9, 11, 12',
 		'early 5' => '3, 5, 7, 11, 12',
-		'place(end-wp 1)' => '9',
 	],
 	'7' => [
 		/**
