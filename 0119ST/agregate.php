@@ -23,7 +23,12 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '(F) 5, 6',
+		'favorites' => '(F) 5, 6, 9',
+		'win(union 1022)' => '4, 5, 6, 9',
+		'unions($10)' => '4, 5, 6, 9',
+		'union + favorites' => '4, 5, 6, 9',
+		'early 4' => '4, 5, 6, 9',
+		'early 5' => '4, 5, 6, 9',
 	],
 	'5' => [
 		/**
