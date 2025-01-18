@@ -73,7 +73,6 @@ return [
 		Race 10
 		*/
 		'favorites' => '(F) 2, 3',
-		'win(union 1)' => '1, 2, 3, 10',
 		'unions($10)' => '1, 2, 3, 10',
 		'union + favorites' => '1, 2, 3, 10',
 		'early 4' => '1, 2, 3, 10',
