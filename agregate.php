@@ -31,6 +31,8 @@ foreach ($dir as $fileinfo) {
         foreach($fileContents as $raceNumber => $data){
             if(isset($oldData[$raceNumber]["places(\$$basicBet)"])) $oldPlaces = explode(", ", $oldData[$raceNumber]["places(\$$basicBet)"]);
             else $oldPlaces = [];
+            if(isset($oldData[$raceNumber]["early 4"])) $oldEarly4 = explode(", ", $oldData[$raceNumber]["early 4"]);
+            else $oldEarly4 = [];
             if(isset($oldData[$raceNumber]["early 5"])) $oldEarly5 = explode(", ", $oldData[$raceNumber]["early 5"]);
             else $oldEarly5 = [];
             if(isset($oldData[$raceNumber]["unions(\$$winBet)"])) $oldUnions = explode(", ", $oldData[$raceNumber]["unions(\$$winBet)"]);
@@ -74,9 +76,12 @@ foreach ($dir as $fileinfo) {
                 $bets[$raceNumber]["unions(\$$winBet)"] = implode(", ", $oldUnions);
                 $unionPlusFavorites = array_values(array_unique(array_merge($oldUnions, explode(", ",$mainData[$raceNumber]['favorites']))));
                 sort($unionPlusFavorites);
+                if(count($unionPlusFavorites) <= 4) $early4 = $unionPlusFavorites;
+                else $early4 = $oldEarly4;
                 if(count($unionPlusFavorites) <= 5) $early5 = $unionPlusFavorites;
                 else $early5 = $oldEarly5;
                 $bets[$raceNumber]["union + favorites"] = implode(", ", $unionPlusFavorites);
+                $bets[$raceNumber]["early 4"] = implode(", ", $early4);
                 $bets[$raceNumber]["early 5"] = implode(", ", $early5);
             }
             if(!empty($oldSupersures)) $bets[$raceNumber]["super sures(\$$basicBet)"] = implode(", ", $oldSupersures);
