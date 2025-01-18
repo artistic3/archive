@@ -33,11 +33,11 @@ return [
 		'place(end-favorites )' => '12',
 		'places($10)' => '12',
 		'sures($10)' => '12',
-		'win(union 645)' => '4, 5, 7, 12',
 		'unions($10)' => '3, 4, 5, 7, 12',
 		'union + favorites' => '3, 4, 5, 7, 12',
 		'early 4' => '',
 		'early 5' => '3, 4, 5, 7, 12',
+		'win(union 645)' => '4, 5, 7, 12',
 		'win(union 1195)' => '3, 4, 7, 12',
 	],
 	'6' => [
