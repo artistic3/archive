@@ -24,7 +24,7 @@ $basicBet = 10;
 $winBet = 10;
 foreach($mainData as $raceNumber => $shit) {
     $bets[$raceNumber] = ['favorites' => '(F) ' . $mainData[$raceNumber]['favorites']];
-    if(isset($mainData[$raceNumber]['all fav history values'])) $bets[$raceNumber]['all fav history'] = '(A) ' . $mainData[$raceNumber]['all fav history values'];
+    if(count(explode(", ", $mainData[$raceNumber]['favorites']))> 1 &&isset($mainData[$raceNumber]['all fav history values'])) $bets[$raceNumber]['all fav history'] = '(A) ' . $mainData[$raceNumber]['all fav history values'];
 }
 $dir = new DirectoryIterator($currentDir); 
 foreach ($dir as $fileinfo) {
