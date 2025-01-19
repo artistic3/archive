@@ -6,18 +6,21 @@ return [
 		Race 1
 		*/
 		'favorites' => '(F) 2, 3',
+		'all fav history' => '(A) 2, 5, 8',
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
 		'favorites' => '(F) 1',
+		'all fav history' => '(A) 1, 6, 8',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
 		'favorites' => '(F) 1',
+		'all fav history' => '(A) 1, 3, 4',
 	],
 	'4' => [
 		/**
@@ -67,6 +70,7 @@ return [
 		Race 9
 		*/
 		'favorites' => '(F) 4',
+		'all fav history' => '(A) 4, 6, 11',
 	],
 	'10' => [
 		/**
