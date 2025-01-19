@@ -88,22 +88,20 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '4, 7, 12',
+		'favorites' => '2, 4, 7, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'suggestions' => [
-			'win' => '1, 2, 3, 4, 5, 6',
-			'qin' => '1, 2, 3, 4, 5, 6, 7, 11, 12',
-			'trio' => '1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13',//count trio: 11
-			'inter' => '4',
+			'win' => '1, 2, 3, 4, 5, 6, 8, 11',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',//count trio: 13
+			'inter' => '2, 4',
 		],
-		'win inter' => '3, 4, 5',
-		'win inter 2' => '4',
+		'win inter' => '4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
-			'place(end-favorites 2020)' => '12',
 		],
-		'total bets' => 100,
-		'wp' => '4, 7',//count wp: 2
+		'total bets' => 0,
+		'wp' => '2, 4, 7',//count wp: 3
 	],
 	'6' => [
 		/**
@@ -223,7 +221,7 @@ return [
 		'wp' => '',//count wp: 0
 	],
 ];
-//total place end favorites: -100
+//total place end favorites: 0
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0

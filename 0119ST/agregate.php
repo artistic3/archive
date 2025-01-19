@@ -34,16 +34,13 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '(F) 4, 7, 12',
-		'place(end-favorites )' => '12',
+		'favorites' => '(F) 2, 4, 7, 12',
 		'places($10)' => '12',
 		'sures($10)' => '12',
 		'unions($10)' => '3, 4, 5, 7, 12',
-		'union + favorites' => '3, 4, 5, 7, 12',
+		'union + favorites' => '2, 3, 4, 5, 7, 12',
 		'early 4' => '',
 		'early 5' => '3, 4, 5, 7, 12',
-		'win(union 1095)' => '4, 5, 7, 12',
-		'win(union 1195)' => '3, 4, 7, 12',
 	],
 	'6' => [
 		/**
