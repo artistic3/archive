@@ -64,24 +64,20 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '1, 7, 11',
+		'favorites' => '1, 5, 7, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '1, 2, 3, 5, 6, 10, 11',
-			'qin' => '1, 2, 3, 4, 5, 6, 9, 10, 11, 12',
-			'trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12',//count trio: 11
-			'inter' => '1, 11',
+			'win' => '1, 2, 3, 4, 5, 6, 10, 11',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
+			'inter' => '1, 5, 11',
 		],
-		'win inter' => '1, 2, 5, 6, 11',
-		'win inter 2' => '1',
+		'win inter' => '1, 2, 5, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
-			'place(end-favorites 462)' => '11',
-			'place(end-wp 462)' => '11',
-			'super sure bet' => 'super sure place 11',
 		],
-		'total bets' => 300,
-		'wp' => '1, 7, 11',//count wp: 3
+		'total bets' => 0,
+		'wp' => '1, 5, 7, 11',//count wp: 4
 	],
 	'5' => [
 		/**
@@ -108,20 +104,20 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '4, 5, 9',
+		'favorites' => '4, 5, 8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '1, 2, 3, 6, 7, 8, 9, 11',
-			'qin' => '1, 2, 3, 5, 6, 7, 8, 9, 11, 12',
-			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',//count trio: 11
-			'inter' => '9',
+			'win' => '1, 2, 3, 4, 6, 7, 8, 9, 11',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
+			'inter' => '4, 8, 9',
 		],
-		'win inter' => '2, 6, 9, 11',
+		'win inter' => '6, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4, 5, 9',//count wp: 3
+		'wp' => '4, 5, 8, 9',//count wp: 4
 	],
 	'7' => [
 		/**
@@ -184,9 +180,9 @@ return [
 		'wp' => '1, 4, 10',//count wp: 3
 	],
 ];
-//total place end favorites: -200
-//total place end wp: -100
+//total place end favorites: -100
+//total place end wp: 0
 //total place wp: 0
-//total sure place: -200
+//total sure place: -100
 //total win: -400
 //total: 0
