@@ -63,12 +63,13 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '(F) 3, 5, 8',
+		'favorites' => '(F) 3, 5, 6, 8',
 		'place(end-favorites )' => '8',
 		'super sure bet' => 'super sure place 8',
-		'places($10)' => '8',
+		'places($10)' => '6, 8',
 		'sures($10)' => '8',
 		'super sures($10)' => '8',
+		'place(end-wp 1349)' => '6',
 	],
 	'8' => [
 		/**
