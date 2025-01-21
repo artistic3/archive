@@ -47,11 +47,11 @@ return [
 		Race 5
 		*/
 		'favorites' => '(F) 2, 5',
-		'win(union 2004)' => '2, 4, 5, 9',
 		'unions($10)' => '1, 2, 4, 5, 9',
 		'union + favorites' => '1, 2, 4, 5, 9',
 		'early 4' => '',
 		'early 5' => '1, 2, 4, 5, 9',
+		'win(union 2004)' => '2, 4, 5, 9',
 		'win(union 2027)' => '1, 2, 5, 9',
 		'win(union 2028)' => '1, 2, 4, 5',
 	],
