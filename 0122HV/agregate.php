@@ -17,14 +17,11 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '(F) 1, 4',
+		'favorites' => '(F) 1, 3, 4',
 		'unions($10)' => '1, 2, 4, 8, 9',
-		'union + favorites' => '1, 2, 4, 8, 9',
+		'union + favorites' => '1, 2, 3, 4, 8, 9',
 		'early 4' => '',
 		'early 5' => '1, 2, 4, 8, 9',
-		'win(union 1348)' => '1, 2, 4, 9',
-		'win(union 1887)' => '1, 4, 8, 9',
-		'win(union 1985)' => '1, 2, 4, 8',
 	],
 	'3' => [
 		/**
@@ -49,7 +46,14 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '(F) 5',
+		'favorites' => '(F) 2, 5',
+		'win(union 2004)' => '2, 4, 5, 9',
+		'unions($10)' => '1, 2, 4, 5, 9',
+		'union + favorites' => '1, 2, 4, 5, 9',
+		'early 4' => '',
+		'early 5' => '1, 2, 4, 5, 9',
+		'win(union 2027)' => '1, 2, 5, 9',
+		'win(union 2028)' => '1, 2, 4, 5',
 	],
 	'6' => [
 		/**
@@ -73,9 +77,9 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '(F) 2, 8, 10, 12',
+		'favorites' => '(F) 2, 8, 9, 10, 12',
 		'unions($10)' => '2, 3, 8, 10, 12',
-		'union + favorites' => '2, 3, 8, 10, 12',
+		'union + favorites' => '2, 3, 8, 9, 10, 12',
 		'early 4' => '2, 3, 8, 10',
 		'early 5' => '2, 3, 8, 10, 12',
 	],
