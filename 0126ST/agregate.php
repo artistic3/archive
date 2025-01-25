@@ -56,8 +56,10 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '(F) 2, 5, 13',
-		'win(union )' => '1, 2, 5, 13',
+		'favorites' => '(F) 1, 2, 5, 13',
+		'place(end-favorites )' => '13',
+		'place(end-wp )' => '5',
+		'places($10)' => '5, 13',
 		'unions($10)' => '1, 2, 4, 5, 9, 13',
 		'union + favorites' => '1, 2, 4, 5, 9, 13',
 		'early 4' => '',
@@ -79,7 +81,7 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '(F) 3',
+		'favorites' => '(F) 3, 5',
 	],
 	'9' => [
 		/**
@@ -101,6 +103,6 @@ return [
 		/**
 		Race 11
 		*/
-		'favorites' => '(F) 5, 6, 9, 11',
+		'favorites' => '(F) 4, 5, 6, 9, 11',
 	],
 ];
