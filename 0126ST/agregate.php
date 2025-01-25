@@ -28,17 +28,23 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '(F) 3, 4, 5, 6',
+		'favorites' => '(F) 2, 3, 4, 5, 6',
+		'all fav history' => '(A) 2, 4, 5',
+		'place(end-favorites )' => '6',
+		'super sure bet' => 'super sure place 6',
+		'places($10)' => '5, 6',
 		'unions($10)' => '1, 2, 4, 5, 6, 7',
 		'union + favorites' => '1, 2, 3, 4, 5, 6, 7',
 		'early 4' => '',
 		'early 5' => '',
+		'super sures($10)' => '6',
+		'place(end-wp 1209)' => '5',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
-		'favorites' => '(F) 6',
+		'favorites' => '(F) 2, 6',
 	],
 	'5' => [
 		/**
@@ -50,7 +56,7 @@ return [
 		'union + favorites' => '1, 2, 4, 5, 9',
 		'early 4' => '',
 		'early 5' => '1, 2, 4, 5, 9',
-		'win(union 990)' => '2, 4, 5, 9',
+		'win(union 2004)' => '2, 4, 5, 9',
 		'win(union 2027)' => '1, 2, 5, 9',
 		'win(union 2028)' => '1, 2, 4, 5',
 	],
@@ -64,7 +70,7 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '(F) 2, 4, 10',
+		'favorites' => '(F) 2, 4, 7, 10',
 	],
 	'8' => [
 		/**
