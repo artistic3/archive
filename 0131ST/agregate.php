@@ -59,12 +59,11 @@ return [
 		'super sure bet' => 'super sure place 8',
 		'places($10)' => '8',
 		'sures($10)' => '8',
-		'super sures($10)' => '8',
-		'win(union 1478)' => '2, 4, 7, 8',
 		'unions($10)' => '2, 4, 7, 8',
 		'union + favorites' => '2, 4, 7, 8',
 		'early 4' => '2, 4, 7, 8',
 		'early 5' => '2, 4, 7, 8',
+		'super sures($10)' => '8',
 	],
 	'8' => [
 		/**
