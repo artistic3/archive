@@ -26,11 +26,11 @@ return [
 		*/
 		'favorites' => '(F) 1, 8',
 		'all fav history' => '(A) 1, 2, 7, 8, 10',
-		'win(union 1843)' => '1, 2, 3, 8',
 		'unions($10)' => '1, 2, 3, 5, 8',
 		'union + favorites' => '1, 2, 3, 5, 8',
 		'early 4' => '',
 		'early 5' => '1, 2, 3, 5, 8',
+		'win(union 1843)' => '1, 2, 3, 8',
 		'win(union 211)' => '1, 2, 5, 8',
 		'win(union 2327)' => '1, 3, 5, 8',
 	],
