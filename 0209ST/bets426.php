@@ -72,7 +72,7 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '7, 12',
+		'favorites' => '3, 7, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'win inter' => '',
 		'bets' => [
@@ -83,7 +83,7 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '2, 7, 8',
+		'favorites' => '2, 3, 7, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'win inter' => '1, 4, 7',
 		'bets' => [
@@ -94,9 +94,9 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '3',
+		'favorites' => '3, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '1, 2, 3, 5, 6, 9, 10, 11, 13',
+		'win inter' => '2, 5, 9, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
