@@ -16,12 +16,13 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '2, 9',
+		'favorites' => '2, 9, 14',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '1, 2, 4, 7, 9, 10',
+		'win inter' => '1',
 		'bets' => [
+			'win(union 120)' => '1, 2, 9, 14',
 		],
-		'total bets' => 0,
+		'total bets' => 400,
 	],
 	'3' => [
 		/**
@@ -127,5 +128,5 @@ return [
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0
-//total win: 0
+//total win: -400
 //total: 0
