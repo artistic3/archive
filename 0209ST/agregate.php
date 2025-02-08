@@ -53,9 +53,9 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '(F) 2, 6, 8, 11',
+		'favorites' => '(F) 2, 4, 6, 8, 11',
 		'unions($10)' => '2, 5, 7, 8, 10, 11',
-		'union + favorites' => '2, 5, 6, 7, 8, 10, 11',
+		'union + favorites' => '2, 4, 5, 6, 7, 8, 10, 11',
 		'early 4' => '',
 		'early 5' => '',
 	],
