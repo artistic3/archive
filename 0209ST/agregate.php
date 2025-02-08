@@ -97,6 +97,11 @@ return [
 		/**
 		Race 11
 		*/
-		'favorites' => '(F) 2',
+		'favorites' => '(F) 2, 3',
+		'win(union )' => '2, 3, 9, 10',
+		'unions($10)' => '2, 3, 9, 10',
+		'union + favorites' => '2, 3, 9, 10',
+		'early 4' => '2, 3, 9, 10',
+		'early 5' => '2, 3, 9, 10',
 	],
 ];

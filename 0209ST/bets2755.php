@@ -115,17 +115,18 @@ return [
 		/**
 		Race 11
 		*/
-		'favorites' => '2',
+		'favorites' => '2, 3',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '5, 9, 10',
+		'win inter' => '9, 10',
 		'bets' => [
+			'win(union 2755)' => '2, 3, 9, 10',
 		],
-		'total bets' => 0,
+		'total bets' => 400,
 	],
 ];
 //total place end favorites: 0
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0
-//total win: 0
+//total win: -400
 //total: 0
