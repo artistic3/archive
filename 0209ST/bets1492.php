@@ -38,9 +38,9 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '1, 2, 11',
+		'favorites' => '1, 2, 4, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '1, 2, 3, 6, 11, 13',
+		'win inter' => '1, 2, 11, 13',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -60,12 +60,13 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '2, 8',
+		'favorites' => '2, 8, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '2, 6, 9, 10',
+		'win inter' => '10',
 		'bets' => [
+			'win(union 1492)' => '2, 8, 10, 11',
 		],
-		'total bets' => 0,
+		'total bets' => 400,
 	],
 	'7' => [
 		/**
@@ -127,5 +128,5 @@ return [
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0
-//total win: 0
+//total win: -400
 //total: 0
