@@ -15,26 +15,10 @@ else $revision = "";
 
 $step = "bets$revision";
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
-
-function factorial($n){
-    if($n <= 0) return 1;
-    $fact = 1;
-    for($i = 1; $i <= $n; $i++) $fact *= $i;
-    return $fact;
-}
-function combination($p, $n){
-    if($n < $p) return 0;
-    return factorial($n) / (factorial($p) * factorial($n - $p));
-}
+$currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate . $venue;
 
 $total = 0;
-$totalPlaceEndF = 0;
-$totalPlaceEndW = 0;
-$totalPlaceW = 0;
-$totalSurePlace = 0;
-$totalWin = 0;
-
-$currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate . $venue;
+$totalQin = 0;
 
 $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
 $winOddsFile = $currentDir . DIRECTORY_SEPARATOR . "winodds.php";
@@ -113,31 +97,40 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $firstSet = true;
     foreach($favorites as $F){
-        $wincandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
-        if($firstSet) {
+      $wincandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
+      $qincandidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
+      $triocandidates = array_intersect($history[$raceNumber][$F]["trio"], $runners);
+      if($firstSet) {
             $winInter = $wincandidates;
+            $qinInter = $qincandidates;
+            $trioInter = $triocandidates;
             $firstSet = false;
         }
         else {
             $winInter = array_intersect($winInter, $wincandidates);
+            $qinInter = array_intersect($qinInter, $qincandidates);
+            $trioInter = array_intersect($trioInter, $triocandidates);
         }
     }
     sort($winInter);
+    sort($qinInter);
+    sort($trioInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
-    $unitBet = 100;
-    $condition2 = !empty($winInter);
+    $racetext .= "\t\t'qin inter' => '" . implode(", ", $qinInter) . "',\n";
+    $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n";
+    $unitBet = 10;
     $racetext .= "\t\t'bets' => [\n";
     if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {
         $union = array_values(array_unique(array_merge($winInter, $favorites)));
         sort($union);
         if(count($union) === 4){
-            $racetext .= "\t\t\t'win(union $revision)' => '" . implode(", ", $union) . "',\n"; 
-            $totalBets[$raceNumber] += $unitBet * count($union);
-            $totalWin -= $unitBet * count($union);
-            if(isset($officialWin) && in_array($officialWin[0], $union)){
-                $totalRace[$raceNumber] += 1/10 * $unitBet * $winAmount;
-                $racetext .= "\t\t\t'1 won(win bet)' => " . 1/10 * $unitBet * $winAmount . ",\n";
-                $totalWin += 1/10 * $unitBet * $winAmount;
+            $racetext .= "\t\t\t'qin(union $revision)' => '" . implode(", ", $union) . "',\n"; 
+            $totalBets[$raceNumber] += $unitBet * combination(2, count($union));
+            $totalQin -= $unitBet * combination(2, count($union));
+            if(isset($officialWin) && in_array($officialWin[0], $union) && in_array($officialWin[1], $union)){
+                $totalRace[$raceNumber] += 1/10 * $unitBet * $qinAmount;
+                $racetext .= "\t\t\t'1 won(qin bet)' => " . 1/10 * $unitBet * $qinAmount . ",\n";
+                $totalQin += 1/10 * $unitBet * $qinAmount;
             }
         }
     }
@@ -155,11 +148,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
-$outtext .= "//total place end favorites: $totalPlaceEndF\n";
-$outtext .= "//total place end wp: $totalPlaceEndW\n";
-$outtext .= "//total place wp: $totalPlaceW\n";
-$outtext .= "//total sure place: $totalSurePlace\n";
-$outtext .= "//total win: $totalWin\n";
+$outtext .= "//total qin: $totalQin\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
 ?>
