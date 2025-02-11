@@ -52,7 +52,7 @@ foreach ($dir as $fileinfo) {
                     if(!in_array($value, $bets[$raceNumber])) {
                         $bets[$raceNumber][$key] = $value;
                     }
-                    if(strpos($key, "win(union") === 0){
+                    if(strpos($key, "qin(union") === 0){
                         $unions[$raceNumber] = array_values(array_unique(array_merge($unions[$raceNumber], explode(", ", $value))));
                     } 
                     if(strpos($key, "place(end-wp") === 0 && !in_array($value, $placesEndWP[$raceNumber])) $placesEndWP[$raceNumber][] = $value;
