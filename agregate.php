@@ -47,7 +47,6 @@ foreach ($dir as $fileinfo) {
                 $bets[$raceNumber]["unions(\$$basicBet)"] = implode(", ", $oldUnions);
                 $unionPlusFavorites = array_values(array_unique(array_merge($oldUnions, explode(", ",$mainData[$raceNumber]['favorites']))));
                 sort($unionPlusFavorites);
-                $bets[$raceNumber]["union + favorites"] = implode(", ", $unionPlusFavorites);
             }
         }
     }
@@ -62,6 +61,9 @@ foreach($bets as $raceNumber => $data){
         $racetext .= "\t],\n";
         $outtext .= $racetext;
     }
+}
+if(isset($unionPlusFavorites) && !empty($unionPlusFavorites)){
+    $bets[$raceNumber]["union + favorites"] = implode(", ", $unionPlusFavorites);
 }
 $outtext .= "];\n";
 file_put_contents($outFile, $outtext);
