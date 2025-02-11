@@ -26,8 +26,6 @@ return [
 		'favorites' => '(F) 3, 7, 9, 13',
 		'unions($10)' => '2, 6, 7, 9, 13',
 		'union + favorites' => '2, 3, 6, 7, 9, 13',
-		'early 4' => '',
-		'early 5' => '2, 6, 7, 9, 13',
 	],
 	'5' => [
 		/**
@@ -48,8 +46,6 @@ return [
 		'favorites' => '(F) 4, 8, 9',
 		'unions($10)' => '3, 4, 7, 8, 9',
 		'union + favorites' => '3, 4, 7, 8, 9',
-		'early 4' => '',
-		'early 5' => '3, 4, 7, 8, 9',
 		'qin(union 1)' => '4, 7, 8, 9',
 		'qin(union 1002)' => '3, 4, 8, 9',
 	],
@@ -66,7 +62,5 @@ return [
 		'favorites' => '(F) 1, 5, 7',
 		'unions($10)' => '1, 5, 7, 11',
 		'union + favorites' => '1, 5, 7, 11',
-		'early 4' => '1, 5, 7, 11',
-		'early 5' => '1, 5, 7, 11',
 	],
 ];

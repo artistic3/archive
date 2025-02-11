@@ -17,14 +17,10 @@ $outtext = "<?php\n\n";
 $outtext .= "return [\n";
 
 $bets = [];
-$placesEndFav = [];
-$placesEndWP = [];
 $unions = [];
 $basicBet = 10;
-$winBet = 10;
 foreach($mainData as $raceNumber => $shit) {
     $bets[$raceNumber] = ['favorites' => '(F) ' . $mainData[$raceNumber]['favorites']];
-    if(count(explode(", ", $mainData[$raceNumber]['favorites']))> 1 &&isset($mainData[$raceNumber]['all fav history values'])) $bets[$raceNumber]['all fav history'] = '(A) ' . $mainData[$raceNumber]['all fav history values'];
 }
 $dir = new DirectoryIterator($currentDir); 
 foreach ($dir as $fileinfo) {
@@ -32,21 +28,9 @@ foreach ($dir as $fileinfo) {
         $fullFilePath = $currentDir . DIRECTORY_SEPARATOR . $fileinfo->getFilename();
         $fileContents = include($fullFilePath);
         foreach($fileContents as $raceNumber => $data){
-            if(isset($oldData[$raceNumber]["places(\$$basicBet)"])) $oldPlaces = explode(", ", $oldData[$raceNumber]["places(\$$basicBet)"]);
-            else $oldPlaces = [];
-            if(isset($oldData[$raceNumber]["early 4"])) $oldEarly4 = explode(", ", $oldData[$raceNumber]["early 4"]);
-            else $oldEarly4 = [];
-            if(isset($oldData[$raceNumber]["early 5"])) $oldEarly5 = explode(", ", $oldData[$raceNumber]["early 5"]);
-            else $oldEarly5 = [];
-            if(isset($oldData[$raceNumber]["unions(\$$winBet)"])) $oldUnions = explode(", ", $oldData[$raceNumber]["unions(\$$winBet)"]);
+            if(isset($oldData[$raceNumber]["unions(\$$basicBet)"])) $oldUnions = explode(", ", $oldData[$raceNumber]["unions(\$$basicBet)"]);
             else $oldUnions = [];
-            if(isset($oldData[$raceNumber]["sures(\$$basicBet)"])) $oldSures = explode(", ", $oldData[$raceNumber]["sures(\$$basicBet)"]);
-            else $oldSures = [];
-            if(isset($oldData[$raceNumber]["super sures(\$$basicBet)"])) $oldSupersures = explode(", ", $oldData[$raceNumber]["super sures(\$$basicBet)"]);
-            else $oldSupersures = [];
             if(!isset($unions[$raceNumber])) $unions[$raceNumber] = [];
-            if(!isset($placesEndWP[$raceNumber])) $placesEndWP[$raceNumber] = [];
-            if(!isset($placesEndFav[$raceNumber])) $placesEndFav[$raceNumber] = [];
             if(isset($data['bets'])) {
                 foreach($data['bets'] as $key => $value){
                     if(!in_array($value, $bets[$raceNumber])) {
@@ -55,39 +39,16 @@ foreach ($dir as $fileinfo) {
                     if(strpos($key, "qin(union") === 0){
                         $unions[$raceNumber] = array_values(array_unique(array_merge($unions[$raceNumber], explode(", ", $value))));
                     } 
-                    if(strpos($key, "place(end-wp") === 0 && !in_array($value, $placesEndWP[$raceNumber])) $placesEndWP[$raceNumber][] = $value;
-                    if(strpos($key, "place(end-fa") === 0 && !in_array($value, $placesEndFav[$raceNumber])) $placesEndFav[$raceNumber][] = $value;
-                    if(strpos($key, "super sure") === 0){
-                        $parts = explode(" ", $value);
-                        if(!in_array(end($parts), $oldSupersures)) $oldSupersures[] = end($parts);
-                    }
                 }
             }
-            $newSures = array_intersect($placesEndFav[$raceNumber], $placesEndWP[$raceNumber]);
-            $oldPlaces = array_values(array_unique(array_merge($oldPlaces, $placesEndFav[$raceNumber], $placesEndWP[$raceNumber])));
             $oldUnions = array_values(array_unique(array_merge($oldUnions, $unions[$raceNumber])));
             sort($oldUnions);
-            if(!empty($newSures)) {
-                $oldSures = array_values(array_unique(array_merge($oldSures, $newSures)));
-            }
-            sort($oldPlaces);
-            sort($oldSures);
-            sort($oldSupersures);
-            if(!empty($oldPlaces)) $bets[$raceNumber]["places(\$$basicBet)"] = implode(", ", $oldPlaces);
-            if(!empty($oldSures)) $bets[$raceNumber]["sures(\$$basicBet)"] = implode(", ", $oldSures);
             if(!empty($oldUnions)) {
-                $bets[$raceNumber]["unions(\$$winBet)"] = implode(", ", $oldUnions);
+                $bets[$raceNumber]["unions(\$$basicBet)"] = implode(", ", $oldUnions);
                 $unionPlusFavorites = array_values(array_unique(array_merge($oldUnions, explode(", ",$mainData[$raceNumber]['favorites']))));
                 sort($unionPlusFavorites);
-                if(count($unionPlusFavorites) <= 4) $early4 = $unionPlusFavorites;
-                else $early4 = $oldEarly4;
-                if(count($unionPlusFavorites) <= 5) $early5 = $unionPlusFavorites;
-                else $early5 = $oldEarly5;
                 $bets[$raceNumber]["union + favorites"] = implode(", ", $unionPlusFavorites);
-                $bets[$raceNumber]["early 4"] = implode(", ", $early4);
-                $bets[$raceNumber]["early 5"] = implode(", ", $early5);
             }
-            if(!empty($oldSupersures)) $bets[$raceNumber]["super sures(\$$basicBet)"] = implode(", ", $oldSupersures);
         }
     }
 }
