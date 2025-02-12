@@ -6,7 +6,6 @@ return [
 		Race 1
 		*/
 		'favorites' => '(F) 11, 12',
-		'qin(union 1754)' => '7, 8, 11, 12',
 		'unions($10)' => '7, 8, 11, 12',
 		'union + favorites' => '7, 8, 11, 12',
 	],
@@ -35,7 +34,6 @@ return [
 		Race 5
 		*/
 		'favorites' => '(F) 6, 7',
-		'qin(union 1)' => '1, 4, 6, 7',
 		'unions($10)' => '1, 4, 6, 7',
 		'union + favorites' => '1, 4, 6, 7',
 	],
