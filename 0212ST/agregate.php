@@ -13,8 +13,7 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '(F) 2, 4, 10',
-		'qin(union 1020)' => '2, 4, 5, 10',
+		'favorites' => '(F) 2, 4, 5, 10',
 		'unions($10)' => '2, 4, 5, 10',
 		'union + favorites' => '2, 4, 5, 10',
 	],
