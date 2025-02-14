@@ -18,6 +18,7 @@ $outtext .= "return [\n";
 
 $bets = [];
 $unions = [];
+$sevens = [];
 $basicBet = 10;
 foreach($mainData as $raceNumber => $shit) {
     $bets[$raceNumber] = ['favorites' => '(F) ' . $mainData[$raceNumber]['favorites']];
@@ -31,6 +32,9 @@ foreach ($dir as $fileinfo) {
             if(isset($oldData[$raceNumber]["unions(\$$basicBet)"])) $oldUnions = explode(", ", $oldData[$raceNumber]["unions(\$$basicBet)"]);
             else $oldUnions = [];
             if(!isset($unions[$raceNumber])) $unions[$raceNumber] = [];
+            if(isset($oldData[$raceNumber]["sevens(\$$basicBet)"])) $oldSevens = explode(", ", $oldData[$raceNumber]["sevens(\$$basicBet)"]);
+            else $oldSevens = [];
+            if(!isset($sevens[$raceNumber])) $sevens[$raceNumber] = [];
             if(isset($data['bets'])) {
                 foreach($data['bets'] as $key => $value){
                     if(!in_array($value, $bets[$raceNumber])) {
@@ -38,6 +42,9 @@ foreach ($dir as $fileinfo) {
                     }
                     if(strpos($key, "qin(union") === 0){
                         $unions[$raceNumber] = array_values(array_unique(array_merge($unions[$raceNumber], explode(", ", $value))));
+                    }
+                    if(strpos($key, "qin(seven") === 0){
+                        $sevens[$raceNumber] = array_values(array_unique(array_merge($sevens[$raceNumber], explode(", ", $value))));
                     } 
                 }
             }
@@ -48,6 +55,11 @@ foreach ($dir as $fileinfo) {
                 $unionPlusFavorites = array_values(array_unique(array_merge($oldUnions, explode(", ",$mainData[$raceNumber]['favorites']))));
                 sort($unionPlusFavorites);
                 $bets[$raceNumber]["union + favorites"] = implode(", ", $unionPlusFavorites);
+            }
+            $oldSevens = array_values(array_unique(array_merge($oldSevens, $sevens[$raceNumber])));
+            sort($oldSevens);
+            if(!empty($oldSevens)) {
+                $bets[$raceNumber]["sevens(\$$basicBet)"] = implode(", ", $oldSevens);
             }
         }
     }
