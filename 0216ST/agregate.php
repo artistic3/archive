@@ -72,9 +72,9 @@ return [
 		Race 9
 		*/
 		'favorites' => '(F) 7, 12',
-		'qin(union 1)' => '4, 7, 9, 12',
 		'unions($10)' => '1, 4, 5, 7, 9, 12',
 		'union + favorites' => '1, 4, 5, 7, 9, 12',
+		'qin(union 1)' => '4, 7, 9, 12',
 		'qin(union 1003)' => '4, 7, 12',
 		'qin(union 1038)' => '7, 9, 12',
 		'qin(union 1862)' => '1, 5, 7, 12',
