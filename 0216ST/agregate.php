@@ -11,7 +11,19 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '(F) 2',
+		'favorites' => '(F) 2, 4',
+		'qin(seven )' => '1, 2, 4, 5, 7, 9, 12',
+		'sevens($10)' => '1, 2, 4, 5, 7, 9, 12',
+		'count sevens' => '7',
+		'qin(union 1000)' => '2, 4, 5, 9',
+		'unions($10)' => '1, 2, 4, 5, 9',
+		'union + favorites' => '1, 2, 4, 5, 9',
+		'count union + favorites' => '5',
+		'qin(union 1010)' => '1, 2, 4, 5',
+		'qin(union 1026)' => '1, 2, 4, 9',
+		'qin(union 1102)' => '1, 2, 4',
+		'qin(union 1138)' => '2, 4, 9',
+		'qin(union 356)' => '2, 4, 5',
 	],
 	'3' => [
 		/**
