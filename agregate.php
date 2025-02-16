@@ -55,11 +55,13 @@ foreach ($dir as $fileinfo) {
                 $unionPlusFavorites = array_values(array_unique(array_merge($oldUnions, explode(", ",$mainData[$raceNumber]['favorites']))));
                 sort($unionPlusFavorites);
                 $bets[$raceNumber]["union + favorites"] = implode(", ", $unionPlusFavorites);
+                $bets[$raceNumber]["count union + favorites"] = count($unionPlusFavorites);
             }
             $oldSevens = array_values(array_unique(array_merge($oldSevens, $sevens[$raceNumber])));
             sort($oldSevens);
             if(!empty($oldSevens)) {
                 $bets[$raceNumber]["sevens(\$$basicBet)"] = implode(", ", $oldSevens);
+                $bets[$raceNumber]["count sevens"] = count($oldSevens);
             }
         }
     }
