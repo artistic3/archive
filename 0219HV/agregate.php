@@ -77,13 +77,12 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '(F) 4, 9',
-		'qin(union )' => '2, 4, 5, 9',
-		'unions($10)' => '2, 4, 5, 9',
-		'union + favorites' => '2, 4, 5, 9',
-		'count union + favorites' => '4',
-		'qin(union 6)' => '4, 5, 9',
-		'qin(union 23)' => '2, 4, 9',
+		'favorites' => '(F) 4, 7, 9',
+		'unions($10)' => '2, 4, 5, 7, 9',
+		'union + favorites' => '2, 4, 5, 7, 9',
+		'count union + favorites' => '5',
+		'qin(union 6)' => '4, 5, 7, 9',
+		'qin(union 20)' => '2, 4, 7, 9',
 	],
 	'9' => [
 		/**
