@@ -32,13 +32,13 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '2, 3',
+		'favorites' => '1, 2, 3',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '3, 5, 11',
-		'qin inter' => '3, 4, 5, 8, 11',
-		'trio inter' => '1, 2, 3, 4, 5, 7, 8, 11',
+		'win inter' => '11',
+		'qin inter' => '3, 4, 8, 11',
+		'trio inter' => '1, 3, 4, 5, 7, 8, 11',
 		'bets' => [
-			'qin(union 139)' => '2, 3, 5, 11',
+			'qin(union 139)' => '1, 2, 3, 11',
 		],
 		'total bets' => 60,
 	],
