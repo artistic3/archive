@@ -24,9 +24,8 @@ return [
 		'qin inter' => '4, 6, 7, 9, 12',
 		'trio inter' => '1, 4, 5, 6, 7, 8, 9, 12',
 		'bets' => [
-			'qin(union 151)' => '2, 7, 12',
 		],
-		'total bets' => 30,
+		'total bets' => 0,
 	],
 	'3' => [
 		/**
@@ -64,9 +63,8 @@ return [
 		'qin inter' => '2, 6',
 		'trio inter' => '1, 2, 3, 6, 9',
 		'bets' => [
-			'qin(union 151)' => '5, 6, 12',
 		],
-		'total bets' => 30,
+		'total bets' => 0,
 	],
 	'6' => [
 		/**
@@ -122,5 +120,5 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total qin: -60
+//total qin: 0
 //total: 0
