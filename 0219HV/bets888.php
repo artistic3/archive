@@ -99,10 +99,10 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '4, 5, 7, 9',
+		'favorites' => '3, 4, 5, 7, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '2',
-		'qin inter' => '2, 5, 6, 8, 9',
+		'win inter' => '',
+		'qin inter' => '5, 6, 8, 9',
 		'trio inter' => '2, 3, 4, 5, 6, 7, 8, 9, 12',
 		'bets' => [
 		],
