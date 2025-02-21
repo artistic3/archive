@@ -57,11 +57,11 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '5, 10',
+		'favorites' => '5, 8, 10',
 		'runners' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11',
-		'win inter' => '1',
-		'qin inter' => '1, 4, 5, 6, 7, 9',
-		'trio inter' => '1, 4, 5, 6, 7, 8, 9, 10',
+		'win inter' => '',
+		'qin inter' => '4, 5, 6, 7, 9',
+		'trio inter' => '4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
