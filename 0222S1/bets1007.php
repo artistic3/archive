@@ -5,14 +5,15 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '1, 2',
+		'favorites' => '1, 2, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'win inter' => '5, 6, 8',
-		'qin inter' => '2, 5, 6, 7, 8',
+		'win inter' => '5, 8',
+		'qin inter' => '2, 5, 7, 8',
 		'trio inter' => '2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
+			'qin(union 1007)' => '1, 2, 5, 8',
 		],
-		'total bets' => 0,
+		'total bets' => 60,
 	],
 	'2' => [
 		/**
@@ -68,5 +69,5 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total qin: -60
+//total qin: -120
 //total: 0

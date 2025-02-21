@@ -5,7 +5,7 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '1, 2',
+		'favorites' => '1, 2, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'win inter' => '5, 8',
 		'qin inter' => '2, 5, 8',
