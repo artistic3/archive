@@ -21,10 +21,10 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '(F) 1, 2, 4',
+		'favorites' => '(F) 1, 2, 4, 8',
 		'unions($10)' => '1, 2, 7, 11',
-		'union + favorites' => '1, 2, 4, 7, 11',
-		'count union + favorites' => '5',
+		'union + favorites' => '1, 2, 4, 7, 8, 11',
+		'count union + favorites' => '6',
 	],
 	'4' => [
 		/**
