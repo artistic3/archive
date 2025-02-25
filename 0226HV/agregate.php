@@ -50,7 +50,10 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '(F) 2',
+		'favorites' => '(F) 2, 9',
+		'qin(seven )' => '1, 2, 3, 7, 8, 9, 11',
+		'sevens($10)' => '1, 2, 3, 7, 8, 9, 11',
+		'count sevens' => '7',
 	],
 	'7' => [
 		/**
