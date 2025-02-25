@@ -85,11 +85,11 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '7',
+		'favorites' => '7, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '2, 6',
-		'qin inter' => '2, 6, 7, 8',
-		'trio inter' => '2, 4, 6, 7, 8',
+		'win inter' => '2',
+		'qin inter' => '2, 7',
+		'trio inter' => '2, 4, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
