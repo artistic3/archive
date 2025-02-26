@@ -5,10 +5,10 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '1, 3',
+		'favorites' => '1, 2, 3',
 		'runners' => '1, 2, 3, 4, 5',
-		'win inter' => '3, 4',
-		'qin inter' => '2, 3, 4',
+		'win inter' => '',
+		'qin inter' => '2',
 		'trio inter' => '2, 3, 4',
 		'bets' => [
 		],
