@@ -50,12 +50,12 @@ return [
 		Race 6
 		*/
 		'favorites' => '(F) 2, 4, 9',
-		'sevens($10)' => '1, 2, 3, 7, 8, 9, 11',
-		'count sevens' => '7',
-		'qin(union 430)' => '2, 4, 9, 11',
 		'unions($10)' => '1, 2, 4, 8, 9, 11',
 		'union + favorites' => '1, 2, 4, 8, 9, 11',
 		'count union + favorites' => '6',
+		'sevens($10)' => '1, 2, 3, 7, 8, 9, 11',
+		'count sevens' => '7',
+		'qin(union 430)' => '2, 4, 9, 11',
 		'qin(union 432)' => '2, 4, 8, 9',
 		'qin(union 464)' => '1, 2, 4, 9',
 	],
