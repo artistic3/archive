@@ -62,6 +62,12 @@ foreach ($dir as $fileinfo) {
             if(!empty($oldSevens)) {
                 $bets[$raceNumber]["sevens(\$$basicBet)"] = implode(", ", $oldSevens);
                 $bets[$raceNumber]["count sevens"] = count($oldSevens);
+                if(!empty($oldUnions)){
+                    $interSevenUnion = array_intersect($oldSevens, $oldUnions);
+                    $bets[$raceNumber]["inter sevens unions"] = implode(", ", $interSevenUnion);
+                    $bets[$raceNumber]["count inter sevens unions"] = count($interSevenUnion);
+                    
+                }
             }
         }
     }
