@@ -5,11 +5,10 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '(F) 2, 6, 8, 9, 10',
+		'favorites' => '(F) 1, 2, 6, 8, 9, 10',
 		'unions($10)' => '2, 6, 8, 9, 10',
-		'union + favorites' => '2, 6, 8, 9, 10',
-		'count union + favorites' => '5',
-		'qin(union 1091)' => '2, 6, 8, 10',
+		'union + favorites' => '1, 2, 6, 8, 9, 10',
+		'count union + favorites' => '6',
 	],
 	'2' => [
 		/**
