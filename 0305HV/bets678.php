@@ -72,7 +72,7 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '1, 4, 5',
+		'favorites' => '1, 4, 5, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '',
 		'qin inter' => '1, 2, 3, 10, 11',
