@@ -27,8 +27,7 @@ return [
 		'unions($10)' => '1, 3, 4, 5, 6, 7',
 		'union + favorites' => '1, 3, 4, 5, 6, 7',
 		'count union + favorites' => '6',
-		'qin(union 100)' => '1, 3, 4, 5',
-		'qin(union 37)' => '1, 3, 5, 6',
+		'qin(union 101)' => '1, 3, 5, 6',
 	],
 	'4' => [
 		/**
