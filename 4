@@ -1,0 +1,10 @@
+raceDate="0308";
+venue="S3";
+php getodds.php $raceDate $venue 4;
+php getwinodds.php $raceDate $venue 4;
+php bets.php $raceDate $venue;
+for i in `seq 1 1092`; 
+do 
+    php bets.php $raceDate $venue $i;
+done
+php agregate.php $raceDate $venue;
