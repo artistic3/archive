@@ -22,6 +22,18 @@ return [
 		'union + favorites' => '1, 2, 3, 6, 7, 8',
 		'count union + favorites' => '6',
 	],
+	'3' => [
+		/**
+		Race 3
+		*/
+		'favorites' => '(F) 5',
+	],
+	'4' => [
+		/**
+		Race 4
+		*/
+		'favorites' => '(F) 1',
+	],
 	'5' => [
 		/**
 		Race 5
