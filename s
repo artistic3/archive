@@ -1,1 +1,1 @@
-while true; do ./2; ./3; ./4; ./p; done
+while true; do ./2; ./p; ./3; ./p; ./4; ./p; done
