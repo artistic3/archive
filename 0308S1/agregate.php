@@ -36,11 +36,12 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '(F) 1, 9',
-		'qin(union )' => '1, 2, 3, 9',
-		'unions($10)' => '1, 2, 3, 9',
-		'union + favorites' => '1, 2, 3, 9',
-		'count union + favorites' => '4',
+		'favorites' => '(F) 1, 8, 9',
+		'unions($10)' => '1, 2, 3, 8, 9',
+		'union + favorites' => '1, 2, 3, 8, 9',
+		'count union + favorites' => '5',
+		'qin(union 1014)' => '1, 3, 8, 9',
+		'qin(union 1016)' => '1, 2, 8, 9',
 	],
 	'5' => [
 		/**
