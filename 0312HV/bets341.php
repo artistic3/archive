@@ -5,15 +5,14 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '2, 9, 12',
+		'favorites' => '1, 2, 9, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '8',
 		'qin inter' => '8',
 		'trio inter' => '3, 4, 8, 12',
 		'bets' => [
-			'qin(union 341)' => '2, 8, 9, 12',
 		],
-		'total bets' => 60,
+		'total bets' => 0,
 	],
 	'2' => [
 		/**
@@ -45,11 +44,11 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '2, 5',
+		'favorites' => '2, 5, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '2, 5, 11',
-		'qin inter' => '2, 4, 5, 6, 11, 12',
-		'trio inter' => '1, 2, 4, 5, 6, 7, 9, 11, 12',
+		'win inter' => '2',
+		'qin inter' => '2, 4, 11',
+		'trio inter' => '2, 4, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -58,11 +57,11 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '1',
+		'favorites' => '1, 4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '1, 2, 5, 7, 8',
-		'qin inter' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
-		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
+		'win inter' => '5',
+		'qin inter' => '1, 3, 5, 6, 7, 10',
+		'trio inter' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -97,12 +96,13 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '5',
+		'favorites' => '1, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'win inter' => '2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'win inter' => '2, 3, 4, 5, 7, 10',
+		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
+			'qin(seven 341)' => '1, 2, 3, 4, 5, 7, 10',
 		],
 		'total bets' => 0,
 	],
@@ -120,5 +120,5 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total qin: -60
+//total qin: 0
 //total: 0
