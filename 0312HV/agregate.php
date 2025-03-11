@@ -48,15 +48,14 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '(F) 3, 7, 8, 10',
+		'favorites' => '(F) 3, 7, 8, 10, 11',
 		'unions($10)' => '1, 2, 3, 7, 8, 10',
-		'union + favorites' => '1, 2, 3, 7, 8, 10',
-		'count union + favorites' => '6',
+		'union + favorites' => '1, 2, 3, 7, 8, 10, 11',
+		'count union + favorites' => '7',
 		'sevens($10)' => '1, 2, 3, 4, 7, 8, 10',
 		'count sevens' => '7',
 		'inter sevens unions' => '1, 2, 3, 7, 8, 10',
 		'count inter sevens unions' => '6',
-		'qin(union 1038)' => '3, 7, 8, 10',
 	],
 	'7' => [
 		/**
