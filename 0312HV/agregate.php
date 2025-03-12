@@ -80,9 +80,9 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '(F) 3, 4, 8, 10',
+		'favorites' => '(F) 3, 4, 8, 10, 11',
 		'unions($10)' => '4, 5, 8, 10',
-		'union + favorites' => '3, 4, 5, 8, 10',
-		'count union + favorites' => '5',
+		'union + favorites' => '3, 4, 5, 8, 10, 11',
+		'count union + favorites' => '6',
 	],
 ];
