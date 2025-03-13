@@ -30,7 +30,7 @@ if(file_exists($outFile)){
     $oldData = include($outFile);
 }
 
-$numberOfRaces = count($allRacesOdds);
+$numberOfRaces = 1;
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
